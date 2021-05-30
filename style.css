@@ -19,6 +19,9 @@ select:focus {
 li {
   list-style: none;
 }
+a{
+  text-decoration: none;
+}
 .clear {
   clear: both;
   /* 清除浮动 */
@@ -120,7 +123,6 @@ button {
   width: 180px;
   margin: 0 25px;
   line-height: 40px;
-  text-decoration: none;
   transition: margin 0.3s;
 }
 .nav ul li a:hover {
@@ -151,16 +153,12 @@ button {
 .picture {
   width: 296px;
   height: 285px;
-  /* background-color: rgb(164, 183, 226); */
-  /* background-image: url(image/demo-pic.jpg); */
-  /* margin-right: 14px; */
 }
 
 .picture a {
   position: absolute;
   width: 296px;
   height: 285px;
-  text-decoration: none;
   transition: transform 0.3s ease-in-out,
     box-shadow 0.3s cubic-bezier(0.47, 0, 0.745, 0.715), border 0.3s linear 0.1s;
 }
@@ -188,35 +186,57 @@ button {
 .second_box .four {
   margin-right: 0;
 }
+/* ------------------content box three-------------------- */
 .third_box {
+  display: flex;
   height: 615px;
-  background-color: rgb(212, 122, 137);
+  /* background-color: rgb(212, 122, 137); */
   margin: 0 auto;
 }
 .promotion {
   float: left;
   width: 300px;
   height: 615px;
-  background-color: rgb(207, 151, 87);
+  /* background-color: rgb(207, 151, 87); */
+  background-image: url(image/long-pic.png);
+}
+.promotion h2{
+  text-align: center;
+  margin-top: 50px;
 }
 .phone {
-  float: left;
-  /* display: flex; */
+  /* float: left; */
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between;
   width: 926px;
   height: 615px;
-  background-color: rgb(99, 179, 233);
+  /* background-color: rgb(99, 179, 233); */
   margin: 0;
   padding: 0;
 }
 .pic {
-  list-style: none;
-  float: left;
-  background-color: rgb(236, 238, 116);
+  display: flex;
+  background-color: rgb(250, 250, 250);
   width: 217px;
   height: 300px;
   margin-left: 14px;
   margin-bottom: 14px;
 }
+.pic img{
+  width: 100%;
+  height: 110%;
+}
+.phone .pic a span{
+  position: relative;;
+  bottom: 60px;
+  left: 65px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
 
 .footer {
   display: flex;
